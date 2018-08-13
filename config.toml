@@ -1,4 +1,5 @@
-baseURL = "localhost:1313"
+# baseURL = "localhost:1313"
+baseURL = ""
 languageCode = "en-us"
 title = "Adi Nugroho"
 theme = "hugo-lodi-theme"
