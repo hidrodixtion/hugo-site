@@ -1,42 +1,55 @@
-# baseURL = "localhost:1313"
-baseURL = ""
+baseURL = "https://lgaida.github.io/mediumish-gohugo-theme-demo/"
 languageCode = "en-us"
-title = "Adi Nugroho"
-theme = "hugo-lodi-theme"
-googleAnalytics = "UA-XXXXXXXX-Y"
+title = "Mediumish"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+copyright = "Adi Nugroho"
+enableEmoji = true
+publishDir = "docs"
+#disqusShortname = "your-shortname-here"
+#googleAnalytics = "UA-1XXXXXXX1-1"
 
 [params]
-    theme_color = "#574CDD"
-    description = "Portfolio of Adi Nugroho"
-    description_photo = "portfolio.jpg"
-    favicon = "favicon.png"
-    logo = "logo.png"
-    email = "hidrodixtion@gmail.com"
-    # facebook = "lex.collado"
-    twitter = "adinugroho"
-    # dribbble = "alexiscollado"
-    linkedin = "https://www.linkedin.com/in/anugroho"
-    medium = "adinugroho"
+  logo = "/images/logo.png"
+  description ="the clean blog!"
+  #mailchimp = "you can provide a mailchimp-link here"
 
-[params.nav]
-    enable = true
+[params.author]
+  name = "Adi Nugroho"
+  thumbnail = "/images/profpic.png"
+  description = "Creator of this blog."
 
-[params.hero]
-    enable = true
-    avatar = "avatar.jpg"
-    subtitle = "Hi! I'm Adi Nugroho, a Mobile Engineer Expert from Indonesia."
-    hero_right = ["**Currently Doing Mobile App Development (Freelance).**", "Proven Software Developer with experiences on enterprise & startup scale. Love innovations & make an impact through Software. Happy to see happy clients & users.", "Since 2012, I've been focusing on Native Mobile App development for both iOS and Android. My skillsets including **Native iOS** (Swift), **Native** Android (Java & Kotlin), **Flutter**, **Web Development** (NodeJS & Ruby on Rails), **Database** & **Git**. Beside writing codes, I also do a bit of writing [on Medium](https://medium.com/@adinugroho/), mostly about programming.", "I finished my Bachelor's degree in Computer Science at Sepuluh Nopember Insitute of Technology, graduated in 2009."]
-    resume = "ResumeCollado.pdf"
+[params.index]
+  picture = "/images/profpic.png"
+  title = "Adi Nugroho"
+  subtitle = "I'm a unique placeholder. Working here and there!"
+  mdtext = '''
+Currently trying to get this blog running, still don't know what the blog will be about!\
+**This textblock is a demonstration of the mdtext-param.**\
+### This is a markdown heading
+'''
+  alertbar = false
 
-[params.process]
-    enable = false
-    title = "My Process"
-    subtitle = "Full Process Design"
+[params.social]
+  github = "<username>"
+  linkedin = "<username>"
+  xing = "<username>"
+  medium = "<username>"
+  twitter = "<username>"
 
-[params.case_studies]
-    enable = false
-    title = "Projects"
-    subtitle = "Selected Works"
-
-[params.footer]
-    enable = true
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "Speaking"
+    weight = 100
+    identifier = "separate"
+    url = "/separate"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/"
